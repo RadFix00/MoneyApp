@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
-    
 }
 
 body{
@@ -135,9 +134,9 @@ main {
 .card-serv img{
     border-top-right-radius: 28px;
     border-top-left-radius: 28px;
-    width: 25em;
+    width: 100%;
     max-height: 180px;
-    
+    object-fit: cover;
 }
 
 .card-serv h2{
