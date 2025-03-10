@@ -156,8 +156,14 @@ main {
 
 
 .cont-compare {
+    text-align: center;
     padding: 30px;
     margin: 50px 0 50px 0;
+}
+
+.cont-compare h1{
+    color: rgb(110, 110, 110);
+    font-size: 30px;
 }
 
 .compare {
