@@ -38,30 +38,32 @@ main {
     color: white;
 }
 
+/* Seccion Hero */
+
 .hero{
     justify-content: center;
     display: flex;
-    padding-bottom: 60px;
 }
 
 .hero img{
-    width: 1100px;
+    width: 60vw;
 }
 
 .hero-text {
-    margin-top: 40px;
+    margin-top: 9vh;
 }
 
 .hero h1{
-    font-size: 100px;
+    font-size: 5em;
     max-width: 620px;
     margin-bottom: 35px;
 }
 
 .hero h3{
-    font-size: 40px;
+    font-size: 1.8em;
     max-width: 550px;
-    margin-bottom: 60px;
+    margin-bottom: 2em;
+    font-weight: 500;
 }
 
 .hero a{
@@ -70,19 +72,19 @@ main {
 
 .hero p{
     position: relative;
-    border-radius: 30px;
+    border-radius: 28px;
     text-align: center;
     color: white;
-    font-size: 30px;
+    font-size: 1.8em;
     border:2px solid #5bb466;
-    padding: 18px;
-    max-width: 300px;
+    padding: 0.4em;
+    max-width: 9em;
     font-weight: 600;
     z-index: 99;
 }
 
 .waves img{
-    height: 30%;
+    height: 10vw;
     width: 100%;
     transform: translate(0%, -100%);
     position: absolute;
@@ -90,25 +92,25 @@ main {
 }
 
 
+/* Aqui Comienzan los servicios */
+
 .cont-servicios {
     background: linear-gradient(to bottom ,#5bb365  ,#5bb36562 ,#5bb36523,#1f3d2300);
-    padding: 100px;
-
+    padding: 20px;
 }
 
 .servicios { 
-    
     text-align: center;
 }
 
 .servicios h1{
-    font-size: 50px;
+    font-size: 3em;
 }
 
 .servicios h3{
-    padding: 50px 13em;
+    padding: 2em 16em;
     font-weight: 500;
-    font-size: 35px;
+    font-size: 1.8em;
 }
 
 .cont-card {
@@ -123,7 +125,7 @@ main {
     background-color: #0b0b0ba8;
     border-radius: 28px;
     width: 400px;
-    height: 450px;
+    height: 470px;
     transition: transform 0.2s ease-in-out;
 }
 
@@ -150,36 +152,33 @@ main {
     color: rgb(214, 214, 214);
 }
 
-
-
-
-
+/* Servicios Compare */
 
 .cont-compare {
     text-align: center;
-    padding: 30px;
-    margin: 50px 0 50px 0;
+    padding: 3em;
+    margin: 2.5em 0;
 }
 
 .cont-compare h1{
     color: rgb(110, 110, 110);
-    font-size: 30px;
+    font-size: 2em;
 }
 
 .compare {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 30px; 
+    padding: 1.5em;
 }
 
 .compare .otros img {
-    margin-top: 90px;
-    width: 300px;
+    margin-top: 8em;
+    width: 16em;
 }
 
 .compare .main img{
-    width: 350px;
+    width: 20em;
 }
 
 .cont-cliente {
@@ -188,17 +187,19 @@ main {
     justify-content: center;
 }
 
+/* clientes */
+
 .clientes {
-    border-radius: 25px;
+    border-radius: 28px;
     background: linear-gradient(to bottom ,#00000086  ,#1f3d2371);
-    width: 1300px;
+    width: 84em;
     text-align: center;
     padding: 2%;
 }
 
 .clientes h1{
     text-align: center;
-    font-size: 50px;
+    font-size: 2em;
     margin-bottom: 0.2em;
 }
 
@@ -217,7 +218,7 @@ main {
 }
 
 .card img{
-    margin: 20px 0 20px 0;
+    margin: 20px 0;
     width: 230px;
     height: 230px;
     border-radius: 50%;
@@ -230,7 +231,7 @@ main {
 }
 
 .card p{
-    font-size: 20px;
+    font-size: 1.4em;
     text-align: center;
     padding: 30px;
 }
@@ -240,6 +241,35 @@ main {
     display: flex;
     justify-content: center;
 }
+
+/* Aliados */
+
+.aliado {
+    padding: 50px;
+}
+
+.aliado h1{
+    font-size: 2.4em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.aliado .aliados{
+    margin-top: 20px;
+    display: flex;
+}
+
+.cont-aliado{
+    display: flex;
+    justify-content: center;
+    gap: 8em;
+}
+
+.aliados img{
+    width: 350px;
+}
+
+/* forms */
 
 .form {
     background-color: #0f0f0fa9;
@@ -330,37 +360,6 @@ main {
     text-decoration: none;
 }
 
-
-
-
-
-
-
-.aliado {
-    padding: 50px;
-}
-
-.aliado h1{
-    font-size: 40px;
-    font-weight: bold;
-    text-align: center;
-}
-
-.aliado .aliados{
-    margin-top: 20px;
-    display: flex;
-}
-
-.cont-aliado{
-    display: flex;
-    justify-content: center;
-    gap: 8em;
-}
-
-.aliados img{
-    width: 350px;
-}
-
 footer {
     font-size: 21px;
     padding: 3em;
@@ -404,3 +403,20 @@ header a:hover {
     transform: scale(1.087);
     background-color: #3251a138;
 }
+
+@media (max-width: 480px) {
+    
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+    
+}
+
