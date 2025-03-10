@@ -44,8 +44,43 @@ main {
     display: flex;
 }
 
+/* escalable para poner un carrusel
+
+.slide{
+    -webkit-mask-image: linear-gradient(to right, rgb(0, 0, 0),  rgb(0, 0, 0),  rgb(0, 0, 0), rgb(0, 0, 0),rgb(0, 0, 0), rgba(0, 0, 0, 0));
+    width: 60vw;
+    height: auto;
+}
+
+.slide ul {
+    display: flex;
+    animation: slide 5s infinite alternate ease-in-out;
+}
+
+.slide li {
+    width: 60vh;
+    list-style: none;
+    position: relative;
+}
+
+@keyframes slide {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    40% {margin-left: -100%;}
+    60% {margin-left: -100%;}
+
+    80% {margin-left: -200%;}
+    100% {margin-left: -200%;}
+}
+
+*/
+
+
+
 .hero img{
     width: 60vw;
+    -webkit-mask-image: linear-gradient(to bottom, rgb(0, 0, 0),  rgb(0, 0, 0),rgb(0, 0, 0), rgba(0, 0, 0, 0));
 }
 
 .hero-text {
@@ -102,7 +137,7 @@ main {
 }
 
 .servicios h1{
-    font-size: 3em;
+    font-size: 4em;
 }
 
 .servicios h3{
@@ -184,6 +219,31 @@ main {
 
 /* clientes */
 
+.cards {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cards ul{
+    padding: 50px;
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    list-style: none;
+    animation: slide 4s infinite alternate ease-in-out;
+}
+
+@keyframes slide {
+    0% {margin-left: 66%;}
+    30% {margin-left: 66%;}
+
+    60% {margin-left: -67%;}
+    100% {margin-left: -67%;}
+}
+
 .cont-cliente {
     display: flex;
     align-items: center;
@@ -191,12 +251,12 @@ main {
 }
 
 .clientes {
-    box-shadow: 2px 15px 20px rgba(0, 0, 0, 0.5);
+    box-shadow:1px 15px 15px rgba(0, 0, 0, 0.5);
     border-radius: 28px;
     background: linear-gradient(to bottom ,#00000086  ,#1f3d2371);
     width: 74em;
     text-align: center;
-    padding: 2%;
+    padding: 2% 4.9%;
 }
 
 .clientes h1{
@@ -205,19 +265,12 @@ main {
     margin-bottom: 0.2em;
 }
 
-.cards{
-    padding: 50px;
-    display: flex;
-    gap: 2em;
-    justify-content: center;
-}
-
 .card{
     box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.5);
     border-radius: 25px;
     background-color: #0000008c;
     width: 19em;
-    height: auto;
+    height: 550px;
 }
 
 .card img{
@@ -230,20 +283,21 @@ main {
 .card h2 {
     color: #3252A1;
     font-weight: 600;
-    padding: 0 40px;
+    padding: 0px 40px;
 }
 
 .card p{
     font-size: 1.4em;
     text-align: center;
-    padding: 30px;
+    padding: 5px 25px;
 }
 
-.cont-form {
-    margin: 80px 0;
-    display: flex;
-    justify-content: center;
+#starts img{
+    width: 2em;
+    bottom: 1px;
 }
+
+
 
 /* Aliados */
 
@@ -273,6 +327,12 @@ main {
 }
 
 /* forms */
+
+.cont-form {
+    margin: 80px 0;
+    display: flex;
+    justify-content: center;
+}
 
 .form {
     box-shadow: 2px 15px 20px rgba(0, 0, 0, 0.5);
@@ -435,7 +495,7 @@ footer p {
 
 header a:hover {
     color: white;
-    border-bottom: 0.5px solid #5bb466;
+    box-shadow:1px 15px 15px rgba(0, 0, 0, 0.144);
 }
 
 .hero p:hover{
